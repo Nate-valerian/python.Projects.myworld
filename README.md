@@ -1,1 +1,2 @@
+**Python** is a high-level, interpreted programming language known for its **simple, readable syntax** and **versatility**. It supports multiple paradigms (object-oriented, functional, procedural) and has a **vast ecosystem** of libraries for web development, data science, AI, automation, and more. Python's emphasis on **code readability** and **rapid development** makes it popular for beginners and professionals alike.
 Django is a back-end server side web framework.
