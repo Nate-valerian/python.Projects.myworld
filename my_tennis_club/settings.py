@@ -24,9 +24,10 @@ SECRET_KEY = 'django-insecure-k0mp9m#sw9%sqnmdfbtywb=l#vxrxo)^*di(amv%rdpn4d+@8n
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# Also add your local IP to ALLOWED_HOSTS for testing:
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -78,10 +79,14 @@ WSGI_APPLICATION = 'my_tennis_club.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'masteruser',
+        'PASSWORD': 'Nate-1453',
+        'HOST': 'django-myproject.c1ycuesmoevw.eu-central-1.rds.amazonaws.com',
+        'PORT': '5432',
+      }
+  }
 
 
 # Password validation
