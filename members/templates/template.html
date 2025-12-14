@@ -1,5 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="{% static 'myfirst.css' %}" />'
   <body>
     {% for x in fruits %}
     <h1>{{ x }}</h1>
@@ -7,4 +9,9 @@
 
     <p>In views.py you can see what the fruits variable looks like.</p>
   </body>
+  <h1>Hello</h1>
+
+  <p>This page contains a footer in a template.</p>
+
+  {% include 'footer.html' %}
 </html>
